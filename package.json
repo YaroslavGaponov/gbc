@@ -1,0 +1,23 @@
+{
+  "name": "gbc",
+  "version": "1.0.0",
+  "description": "Generation based cache",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "npx jest",
+    "lint": "npx tslint -c tslint.json --project tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.0",
+    "@types/node": "^13.1.8",
+    "jest": "^25.1.0",
+    "jest-junit": "^10.0.0",
+    "ts-jest": "^25.0.0",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  },
+  "author": "Yaroslav Gaponov",
+  "license": "ISC"
+}
