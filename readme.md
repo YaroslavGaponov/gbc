@@ -2,6 +2,8 @@ Generation based cache
 ==================================
 
 
+# Main technical commands
+
 ## Build
 
 ```sh
@@ -13,4 +15,10 @@ npm run build
 
 ```sh
 npm test
+```
+
+## List
+
+```sh
+npm run lint
 ```
