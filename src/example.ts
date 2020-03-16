@@ -23,7 +23,7 @@ for (let i = 0; i < SIZE; i++) {
 }
 
 
-// 2.1 fill ip
+// 2.1 fill
 for (let i = 0; i < SIZE; i++) {
     cache.set(`key${i}`, `value${i}`);
 }
