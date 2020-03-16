@@ -1,0 +1,1 @@
+{"version":3,"file":"generation-based-cache.decorator.js","sourceRoot":"","sources":["../src/generation-based-cache.decorator.ts"],"names":[],"mappings":";;AAAA,sBAAyC;AAEzC,SAAgB,KAAK,CAAC,IAAY,EAAE,IAAY;IAC5C,OAAO,UAAC,MAAW,EAAE,WAA4B;QAC7C,MAAM,CAAC,WAAW,CAAC,GAAG,IAAI,uBAAoB,CAAC,IAAI,EAAE,IAAI,CAAC,CAAC;IAC/D,CAAC,CAAA;AACL,CAAC;AAJD,sBAIC"}

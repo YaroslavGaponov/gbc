@@ -20,7 +20,7 @@ for (var i = 0; i < SIZE; i++) {
     var isDeleted = cache.delete("key" + i);
     assert_1.default(isDeleted);
 }
-// 2.1 fill ip
+// 2.1 fill
 for (var i = 0; i < SIZE; i++) {
     cache.set("key" + i, "value" + i);
 }
