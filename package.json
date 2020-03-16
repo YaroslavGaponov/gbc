@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx tsc",
     "test": "npx jest",
-    "lint": "npx tslint -c tslint.json --project tsconfig.json"
+    "lint": "npx tslint -c tslint.json --project tsconfig.json -e src/example.ts"
   },
   "devDependencies": {
     "@types/jest": "^25.1.0",

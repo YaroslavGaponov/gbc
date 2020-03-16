@@ -11,15 +11,15 @@ it("simple #1", function () {
 });
 it("simple #2", function () {
     var cache = new generation_based_cache_1.GenerationBasedCache(60, 3);
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < 119; i++) {
         cache.set("key" + i, "value" + i);
         expect(cache.has("key" + i)).toBeTruthy();
     }
-    for (var i = 0; i < 100; i++) {
-        if (i < 30) {
+    for (var i = 0; i < 119; i++) {
+        if (i < (120 - 60)) {
             expect(cache.has("key" + i)).toBeFalsy();
         }
-        if (i > 50) {
+        else {
             expect(cache.has("key" + i)).toBeTruthy();
         }
     }

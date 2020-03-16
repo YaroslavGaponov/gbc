@@ -1,10 +1,3 @@
-Generation based cache
-==================================
-
-# Example
-
-
-```ts
 import { GenerationBasedCache } from ".";
 import assert from "assert";
 
@@ -44,25 +37,4 @@ for (let i = 0; i < SIZE; i++) {
     assert(i > (SIZE - CACHE_SIZE) ? isFound : !isFound);
 
 }
-```
 
-# Main technical commands
-
-## Build
-
-```sh
-npm run build
-```
-
-
-## Test
-
-```sh
-npm test
-```
-
-## List
-
-```sh
-npm run lint
-```
