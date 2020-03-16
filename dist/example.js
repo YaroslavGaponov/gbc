@@ -9,7 +9,7 @@ var assert_1 = __importDefault(require("assert"));
 var CACHE_SIZE = 21;
 var CACHE_GENERATIONS = 3;
 var cache = new _1.GenerationBasedCache(CACHE_SIZE, CACHE_GENERATIONS);
-var SIZE = (3 * CACHE_SIZE) + (CACHE_SIZE - 1); // fill all generations before cleaning
+var SIZE = 13 * CACHE_SIZE; // fill all generations before cleaning
 // 1. simple check
 for (var i = 0; i < SIZE; i++) {
     cache.set("key" + i, "value" + i);
@@ -25,10 +25,11 @@ for (var i = 0; i < SIZE; i++) {
     cache.set("key" + i, "value" + i);
 }
 // 2.2 print
+// tslint:disable-next-line:no-console
 console.log(cache);
 // 2.3 check cache
 for (var i = 0; i < SIZE; i++) {
     var isFound = cache.has("key" + i);
-    assert_1.default(i > (SIZE - CACHE_SIZE) ? isFound : !isFound);
+    assert_1.default(i >= (SIZE - CACHE_SIZE) ? isFound : !isFound);
 }
 //# sourceMappingURL=example.js.map

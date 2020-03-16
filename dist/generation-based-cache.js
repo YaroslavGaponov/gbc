@@ -16,10 +16,10 @@ var GenerationBasedCache = /** @class */ (function () {
     };
     GenerationBasedCache.prototype.set = function (key, value) {
         this.delete(key);
-        this.caches[0].set(key, value);
         if (this.caches[0].size >= this.maxGenSize) {
             this.clean();
         }
+        this.caches[0].set(key, value);
     };
     GenerationBasedCache.prototype.get = function (key) {
         for (var i = 0; i < this.gens; i++) {

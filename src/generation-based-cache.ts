@@ -20,10 +20,10 @@ export class GenerationBasedCache<K, V> implements ICache<K, V> {
 
     set(key: K, value: V): void {
         this.delete(key);
-        this.caches[0].set(key, value);
         if (this.caches[0].size >= this.maxGenSize) {
             this.clean();
         }
+        this.caches[0].set(key, value);
     }
 
     get(key: K): V | undefined {

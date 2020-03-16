@@ -16,12 +16,12 @@ it("simple #2", () => {
 
     const cache = new GenerationBasedCache(60, 3);
 
-    for (let i = 0; i < 119; i++) {
+    for (let i = 0; i < 120; i++) {
         cache.set(`key${i}`, `value${i}`);
         expect(cache.has(`key${i}`)).toBeTruthy();
     }
 
-    for (let i = 0; i < 119; i++) {
+    for (let i = 0; i < 120; i++) {
         if (i < (120 - 60)) {
             expect(cache.has(`key${i}`)).toBeFalsy();
         } else {
