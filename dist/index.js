@@ -4,4 +4,5 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./generation-based-cache"));
+__export(require("./generation-based-cache.decorator"));
 //# sourceMappingURL=index.js.map
